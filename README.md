@@ -1,10 +1,10 @@
 
-📊 Sales Forecasting for a German Drugstore Chain (2013–2015)
+# 📊 Sales Forecasting for a German Drugstore Chain (2013–2015)
 
 This project was part of my MSc program at the Alliance Manchester Business School, which focuses on daily sales prediction for 1,115 German drugstore stores, using historical data spanning from 2013 to 2015.
 Multiple machine learning & deep learning models were implemented, analysed, and compared to build a robust forecasting solution.
 
-🚀 Project Objectives
+## 🚀 Project Objectives
 
 Forecast daily sales for 6 weeks across retail outlets.
 
@@ -14,7 +14,7 @@ Build machine learning models and compare their results.
 
 Generate business recommendations based on data insights.
 
-📂 Dataset Overview
+## 📂 Dataset Overview
 
 1,048,575 observations
 
@@ -26,7 +26,7 @@ Time range: January 2013 – August 2015
 
 Data Analytics project report
 
-🔧 Data Pre-Processing Performed
+## 🔧 Data Pre-Processing Performed
 
 Step	Description:
 Missing Value Handling: Filled using random forest imputation for selected fields.
@@ -39,7 +39,7 @@ Train-Test Split	70% training
 
 Data Analytics project report
 
-📈 Exploratory Data Analysis (EDA) Highlights
+## 📈 Exploratory Data Analysis (EDA) Highlights
 
 Sales maximum = 41,551, mean = 5,767.83
 
@@ -55,7 +55,7 @@ PCA & Correlation analysis show a strong relation between Sales ↔ Customers.
 
 Data Analytics project report
 
-🧭 Clustering
+## 🧭 Clustering
 
 To model stores better, K-Means clustering was implemented → Optimal clusters = 4
 
@@ -69,14 +69,15 @@ Cluster 3	Highest performing
 
 Data Analytics project report
 
-🤖 Models Implemented
+## 🤖 Models Implemented
 
-Model 	                  | RMSE (Validation)     |	RMSPE     |	Notes
-Multiple Linear Regression                                    |	High error,	Underperformed,	Could not capture variability
-Random Forest             |	1437–1737	            |23–30%	    |Better, but still limited
-XGBoost ⭐                |1118–1342	            |13.7–23%	  |Best performing model
-Deep Neural Network       |	Higher Error	                    |Over-generalising	
-RNN/LSTM                  | Good temporal handling|17–27% 	|Better than DNN but < XGBoost
+| Model | RMSE (Validation) | RMSPE | Notes |
+|---|---|---|---|
+| Multiple Linear Regression | High error | Underperformed | Could not capture variability |
+| Random Forest | 1437–1737 | 23–30% | Better but still limited |
+| **XGBoost ⭐** | **1118–1342** | **13.7–23%** | 🏆 Best performing model |
+| Deep Neural Network | Higher Error | — | Over generalizing |
+| RNN/LSTM | Good temporal handling | 17–27% RMSPE | Better than DNN but < XGBoost |
 
 📌 XGBoost selected as final model because it achieved the best accuracy across all clusters.
 (Ref: Modelling pg.12–19) 
