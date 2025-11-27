@@ -95,13 +95,14 @@ Data Analytics project report
 
 Data Analytics project report
 
-📷 Project Structure (Suggested for GitHub)
-📁 Sales-Forecasting-Drugstore
+## 📁 Project Structure
+
+📂 Sales-Forecasting-Drugstore
 │── 📄 README.md
 │── 📄 Data Analytics Project Report.pdf
-│── 📁 notebooks/
-│── 📁 data/
-│── 📁 models/
+│── 📂 notebooks/
+│── 📂 data/
+│── 📂 models/
 
 🔥 Tech Stack
 Category	Tools Used
